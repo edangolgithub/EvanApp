@@ -42,7 +42,7 @@ namespace EvanApp.Droid.Pages
             int value = r.Next(1, 100);
             memory = value;
             infotxt.Text = "";
-            chance = 7;
+            chance = 8;
         }
 
         private void Submitbtn_Clicked(object sender, EventArgs e)
@@ -50,6 +50,7 @@ namespace EvanApp.Droid.Pages
             if (numtxt.Text.Length < 1)
             {
                 DisplayAlert("Warning", "You did not enter any thing", "ok");
+                return;
             }
             infotxt.Text = "";
             if (!int.TryParse(numtxt.Text, out num))
@@ -59,22 +60,22 @@ namespace EvanApp.Droid.Pages
             }
 
 
-            if (chance <= 0)
+            if (chance <= 1)
             {
                 infotxt.Text = "you are not good player \nyou lost!!!!!" +
                  "\nthe number was " + memory;
                 return;
             }
 
-
+            chance--;
 
             if (num < memory)
             {
-                infotxt.Text = "too low" + " you have " + (chance - 1) + " chance left";
+                infotxt.Text = "too low" + " you have " + (chance) + " chance left";
             }
             else if (num > memory)
             {
-                infotxt.Text = "too high" + " you have " + (chance - 1) + " chance left";
+                infotxt.Text = "too high" + " you have " + (chance) + " chance left";
             }
             else
             {
@@ -85,7 +86,7 @@ namespace EvanApp.Droid.Pages
 
             numtxt.Text = "";
 
-            chance--;
+         
 
         }
     }
