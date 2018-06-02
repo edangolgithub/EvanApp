@@ -5,15 +5,21 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="kk" />
-            <Label
+
+            <Label                
+                FontSize="Large"
                 HorizontalOptions="CenterAndExpand"
+                HorizontalTextAlignment="Center"
                 Text="Welcome to Ribesh Number Guessing Game"
+                TextColor="Green"
                 VerticalOptions="CenterAndExpand" />
-            <Label FontSize="Large" TextColor="#D40051"
+            <Label x:Name="kk" HorizontalOptions="Center" />
+            <Label
                 x:Name="infotxt"
+                FontSize="Large"
                 HorizontalOptions="CenterAndExpand"
                 Text=""
+                TextColor="#D40051"
                 VerticalOptions="CenterAndExpand" />
             <Label FontSize="Medium" TextColor="#0C0A5F">Guess a number between 1 to 100</Label>
             <Editor x:Name="numtxt" />
