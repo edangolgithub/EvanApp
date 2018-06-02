@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="EvanApp.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:EvanApp"
+    BackgroundImage="ribesh.png" Title="Ribesh Game"
+    >
+
+    <StackLayout>
+        <!--  Place new controls here  -->
+       
+        <Label TextColor="#07055A" FontSize="30" FontAttributes="Bold" FontFamily="Comic sans MS" HorizontalTextAlignment="Center"
+            HorizontalOptions="Center"
+            Text="Welcome to Ribesh Amatya Game App"
+            VerticalOptions="StartAndExpand" />
+       
+        <Button x:Name="GameBtn" BackgroundColor="Green" Text="Number Guessing Game" />
+        <Button x:Name="chatbtn" IsVisible="False" Text="Chat Server" />
+    </StackLayout>
+
+</ContentPage>

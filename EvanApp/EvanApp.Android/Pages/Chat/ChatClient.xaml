@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EvanApp.Droid.Pages.Chat.ChatClient">
+    <ContentPage.Content>
+       
+            <StackLayout>
+                <Button
+                x:Name="navbtn"
+                HorizontalOptions="Center"
+                Text="Go To Main" />
+                <Label
+                FontSize="20"
+                HorizontalOptions="CenterAndExpand"
+                Text="Evan Android App"
+                VerticalOptions="CenterAndExpand" />
+                <Label
+                FontSize="10"
+                HorizontalOptions="CenterAndExpand"
+                Text="Built By Evan Dangol"
+                VerticalOptions="CenterAndExpand" />
+                <Label Text="type message to send to server" />
+                <Editor x:Name="editor" BackgroundColor="#FCE8CC" />
+                <Button
+                x:Name="sendbtn"
+                HorizontalOptions="Center"
+                Text="Send Message To Server" />
+                <Label x:Name="msglabel" />
+                <Button
+                x:Name="serverbtn"
+                HorizontalOptions="Center"
+                Text="Connect To Server" />
+                <Button
+                x:Name="serverbtncls"
+                HorizontalOptions="Center"
+                Text="Close Connection" />
+            </StackLayout>
+        </ContentPage.Content>
+   
+</ContentPage>

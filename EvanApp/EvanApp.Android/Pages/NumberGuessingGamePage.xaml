@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="EvanApp.Droid.Pages.NumberGuessingGamePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="kk" />
+            <Label
+                HorizontalOptions="CenterAndExpand"
+                Text="Welcome to Ribesh Number Guessing Game"
+                VerticalOptions="CenterAndExpand" />
+            <Label FontSize="Large" TextColor="#D40051"
+                x:Name="infotxt"
+                HorizontalOptions="CenterAndExpand"
+                Text=""
+                VerticalOptions="CenterAndExpand" />
+            <Label FontSize="Medium" TextColor="#0C0A5F">Guess a number between 1 to 100</Label>
+            <Editor x:Name="numtxt" />
+            <Button x:Name="Submitbtn" Text="Submit" />
+            <Button x:Name="restartbtn" Text="Restart" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
