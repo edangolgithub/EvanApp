@@ -87,7 +87,7 @@ namespace EvanApp.Droid.Pages
             }
             
             numtxt.Text = "";
-            if (chance <= 0)
+            if (chance <= 0&&num!=memory)
             {
                 DisplayAlert("Looser", "you are not good player \nyou lost!!!!!" +
                    "\nthe number was " + memory, "Ok");
